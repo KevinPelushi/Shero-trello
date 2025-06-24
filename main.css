@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px 60px 20px 60px;
+  min-height: 90px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo {
+  height: 10rem;
+  width: auto;
+}
+
+.shop {
+  background: #49a942;
+  color: #fff;
+  padding: 12px 38px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 55px;
+}
+
+.navbar-center a {
+  color: #222;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  color: #49a942;
+  font-size: 26px;
+  cursor: pointer;
+} 
