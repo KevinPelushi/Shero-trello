@@ -23,17 +23,6 @@ body {
   width: auto;
 }
 
-.shop {
-  background: #49a942;
-  color: #fff;
-  padding: 12px 38px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
 
 .navbar-center {
   display: flex;
@@ -41,10 +30,13 @@ body {
 }
 
 .navbar-center a {
-  color: #222;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
+ text-decoration: none;
+ color: #000000;
+ font-size: 14px;
+ padding: 10px 25px;
+ font-weight: normal;
+ border-radius: 25px;
+ transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-right {
@@ -58,3 +50,9 @@ body {
   font-size: 26px;
   cursor: pointer;
 } 
+
+.navbar-center a:hover {
+  background-color: #49a942;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
