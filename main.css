@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -10,6 +9,7 @@ body {
   background: #fff;
   padding: 20px 60px 20px 60px;
   min-height: 90px;
+  margin-top: -30px;
 }
 
 .navbar-left {
@@ -19,17 +19,18 @@ body {
 }
 
 .logo {
-  height: 10rem;
-  width: auto;
+  height: 170px;
+  width: 145px;
 }
-
 
 .navbar-center {
   display: flex;
   gap: 55px;
+  font-size: 18px;
 }
 
 .navbar-center a {
+font-family: 'Jost', sans-serif;
  text-decoration: none;
  color: #000000;
  font-size: 14px;
@@ -46,8 +47,9 @@ body {
 }
 
 .icon {
-  color: #49a942;
-  font-size: 26px;
+  color: transparent;
+  -webkit-text-stroke: 1px #55AB25;
+  font-size: 20px;
   cursor: pointer;
 } 
 
