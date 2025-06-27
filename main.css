@@ -212,23 +212,36 @@ p {
 
 .tab {
   padding: 30px 60px;
-  border: 1px solid #ccc;
   border-radius: 12px;
-  background: #fff;
-  color: #55AB25;
-  font-size: 16px;
+  position: relative;
+  background: transparent;
+  color: #333;
+  border: 1px solid #ccc;
   cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
 }
 
-.tab a {
-  transition: background-color 0.3s, color 0.3s;
+.tab::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: 0; height: 100%;
+  background: #55AB25;      
+  z-index: -1;
+  transition: width 0.3s ease;
 }
 
-.tab a:hover {
-  background-color: #49a942;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+.tab:hover::before {
+  width: 100%;
 }
+
+
+.tab:hover {
+  color: #000;
+}
+
 
 .tab.active {
   background: #55AB25;
@@ -270,7 +283,6 @@ p {
   margin-bottom: 30px;
   line-height: 1.6;
   margin-left: 13%;
-
 }
 
 .btn {
@@ -286,7 +298,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #2e6a33;
+  background-color: #55AB25;
 }
 
 .image-wrapper {
@@ -299,6 +311,19 @@ p {
   max-width: 100%;
   height: auto;
   
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5%;
+  
+}
+
+.pack p {
+  color: #55AB25;
+  font-size: large;
 }
 
 
