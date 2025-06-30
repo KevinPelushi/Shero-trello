@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Jost';
+  padding: 0;
 }
 
-a {
+a{
   text-decoration: none;
   color: black;
 }
@@ -15,27 +15,30 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: 'Jost';
 }
 
 .navbar-logo {
-  margin-top: -5%;
+  margin-top: -10%;
   margin-right: 90%;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .logo {
-  margin-top: 60px;
-  width: 150px;
-  height: 120px;
+  padding-top: 100px;
+  width: 190px;
+  height: 190px;
 }
 
 .navbar-center {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
-  margin-bottom: 10px;
+  gap: 30px;
+  padding-top: 70px;
+  text-decoration: none;
+  color: black;
+ 
 }
 
 .navbar-center a {
@@ -44,6 +47,8 @@ a {
   font-weight: 500;
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: black;
 }
 
 .navbar-center a:hover {
@@ -54,8 +59,8 @@ a {
 
 .navbar-right {
   display: flex;
-  margin-left: 80%;
-  margin-top: -3.5%;
+  margin-top: -58px;
+  padding-left: 82%;
   gap: 25px;
   color: transparent;
   -webkit-text-stroke: 1px #55AB25;
@@ -87,12 +92,12 @@ a {
 
 .protein-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: 5%;
     width: 100%;
-    height: 87%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: brightness(57%) blur(2px);
 }
 
 .content {
@@ -104,74 +109,74 @@ a {
     display: flex;
     align-items: flex-start;
     gap: 100px;
-}
-
-.text-section {
-    max-width: 400px;
+    
 }
 
 h1 {
-    font-weight: 300;
+    font-weight: 540;
     font-size: 70px; 
-    margin-top: -70px;
-    
+    padding-left: 20%;
 }
 
 p {
     font-size: 25px;
-    margin-top: 5px; 
-    margin-bottom: 30px;
+    margin-top: -40px;
+    padding-left: 22%;
+    color: rgb(239, 238, 238);
+    word-spacing: 3px;
+    
+   
 }
 
 .info-circles {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    margin-top: 10px;
-    margin-left: 60px;
-    font-weight: 200;
+    display: flex; 
+    gap: 10px;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    font-size: 40%;
 }
 
 .circle {
-    width: 140px;
-    height: 140px;
-    border: 2px solid white;
+    width: 160px;
+    height: 160px;
+    border: 2px solid whitesmoke;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 12%;
     font-size: 17px;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 100;
 }
 
 .circle span:first-child {
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 4px;
+    font-size: 50px;
+    font-weight: 200;
 }
 
 .button { 
     background-color: #FFE600;
     color: black;
     display: inline-block;
-    padding: 20px 25px;
+    padding: 25px 30px;
     font-size: 16px;
-    font-weight: bold;
-    border-radius: 6px;
+    font-weight: 550;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 40%;
+    margin-left: 23%;
 }
 
 .slider-indicator {
     position: absolute;
     bottom: 30px;
-    left: 80px;
+    left: 45%;
     display: flex;
-    align-items: center;
+    
     gap: 5px;
 }
 
@@ -202,6 +207,10 @@ p {
     cursor: pointer;
 }
 
+.plus {
+  color: #999; 
+}
+
 .tabs {
   display: flex;
   justify-content: center;
@@ -211,23 +220,25 @@ p {
 }
 
 .tab {
-  padding: 30px 60px;
+  padding: 20px 120px;
   border-radius: 12px;
   position: relative;
   background: transparent;
-  color: #333;
+  color: #499221;
   border: 1px solid #ccc;
   cursor: pointer;
   overflow: hidden;
   transition: color 0.3s ease;
+  text-align: left;
+  padding-left: 5px;
 }
 
 .tab::before {
   content: "";
   position: absolute;
-  left: 0; top: 0;
+  right: 0; top: 0;
   width: 0; height: 100%;
-  background: #55AB25;      
+  background: #499221;      
   z-index: -1;
   transition: width 0.3s ease;
 }
@@ -239,14 +250,55 @@ p {
 
 
 .tab:hover {
-  color: #000;
+  color: white;
 }
 
 
 .tab.active {
-  background: #55AB25;
+  background: #499221;
   color: white;
 }
+
+.last-tab {
+  padding: 20px 80px;
+  border-radius: 12px;
+  position: relative;
+  background: #f0f0f0;
+  color: rgb(105, 102, 102);
+  border: 1px solid #9e9c9c;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  text-align: left;
+  padding-left: 5px;
+  z-index: 1;
+}
+
+.last-tab::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #499221; 
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.last-tab:hover::before {
+  width: 100%; 
+}
+
+.last-tab:hover {
+  color: white;
+}
+
+.last-tab.active {
+  background: #499221;
+  color: white;
+}
+
 
 .welcome-pack {
   background-color: #f6eae4;
@@ -254,7 +306,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px;
+  padding: 90px 30px;
   margin: 40px auto;
   max-width: 1200px;
   gap: 30px;
@@ -267,89 +319,166 @@ p {
 }
 
 .text h2 {
-  font-size: 50px;
-  margin-top: 20px;
-  margin-left: 10%;
-  color: #55AB25;
-  line-height: 1.2;
-  font-weight: 10;
-  font-family: Helvetica;
+  font-family: 'Helvetica Neue LT Std';
+  font-weight: 300;
+  font-size: 60px; 
+  line-height: 1.2; 
+  margin: 0 auto;
+  text-align: center;
+  color: #238014;
+  max-width: 90%;
+  
 }
 
 .text p {
-  font-size: 16px;
-  font-family:'Jost';
-  color: #55AB25;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  margin-left: 13%;
+  font-family: 'Jost';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6; 
+  color: #66bb5a;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 0 10px;
 }
 
+
+
 .btn {
-  background-color: #55AB25;
+  font-family: 'Jost';
+  background-color: #55AB26;
   color: white;
   padding: 14px 32px;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 50px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   transition: 0.3s ease;
   margin-left: 27%;
+  margin-top: 40px;
 }
 
 .btn:hover {
-  background-color: #55AB25;
+  background-color: #55AB26;
 }
 
 .image-wrapper {
- display: flex;
-  margin-right: 35%;
-  width: 18%;
+  position: relative;
+  width: 90%;
+  height: 20px;
+  overflow: visible;
+}
+.image-group {
+  position: absolute;
+  top: -500px;
+  left: 40%;
+  transform: scale(1.6);
 }
 
-.image-wrapper img {
-  max-width: 100%;
+.shaker {
+  position: absolute;
+  width: 170px;
   height: auto;
-  
+  left: 50px;
+  top: 0;
+  z-index: 2;
+}
+.almased-can1 {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  left: 180px;
+  top: 40px;
+  z-index: 3;
+}
+.almased-can2 {
+  position: absolute;
+  width: 170px;
+  height: auto;
+  left: 280px;
+  top: 5px;
+  z-index: 1;
 }
 
 .features {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 140px;
   text-align: center;
-  margin-top: 5%;
-  
+  flex-wrap: wrap;
 }
 
-.pack p {
-  color: #55AB25;
-  font-size: large;
+.feature-box {
+  width: 220px;
+  color: #2b7713;
 }
+
+.feature-box img {
+  height: 80px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.feature-box h3 {
+  font-family: 'Miller Display';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #55AB25;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.feature-box p {
+  font-family: 'Jost';
+  font-size: 18px;
+  white-space: nowrap;
+  color: #55AB25;
+  font-weight: 400;
+  display: flex;
+  margin-top: 5px;
+   display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 10px;
+ 
+}
+
 
 
 @media (max-width: 699px) {
   .navbar {
     flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 20px;
-    position: relative;
+    padding: 5px 5px;
+    
   }
 
-  .navbar-logo {
-    margin-top: -120px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  position: relative; 
+  padding-left: 30%;
+  padding-bottom: 35px;
 
-  .logo {
-    height: 100px;
-    width: auto;
-  }
+}
+
+.logo {
+  height: 125px;
+  width: auto;
+  margin: 0;
+  
+}
 
   .navbar-center {
     display: none;
   }
+
 
   .navbar-hamburger {
     display: block;
@@ -359,8 +488,10 @@ p {
   }
 
   .navbar-right {
-    margin-right: 20px;
-    gap: 15px;
+   
+    margin-bottom: 35px;
+    padding-top: 20px;
+    gap:  7px;  
   }
 
   .mobile-menu {
@@ -419,7 +550,6 @@ p {
     .protein-section {
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
         text-align: center;
     }
 
