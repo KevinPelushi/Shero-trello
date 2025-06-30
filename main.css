@@ -452,10 +452,8 @@ p {
   display: flex;
   width: 98%;
   height: 70vh;
-  width: 98%;
   margin: 0 auto;
 }
-
 
 .text-column {
   background-color: #D8F4B5;
@@ -464,49 +462,69 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-}
-
-.quote-mark {
-  font-size: 60px;
-  color: #2F8A1E;
-  margin: 0;
-  line-height: 0;
 }
 
 .quote-text {
-  font-size: 48px;
+  font-family: 'Playfair Display';
+  font-size: 62px;
   color: #2F8A1E;
-  margin: 20px 0;
-  font-weight: normal;
+  margin: 0;
   line-height: 1.2;
+  position: relative;
+  font-weight: normal;
+}
+
+.quote-text::before,
+.quote-text::after {
+  font-size: 90px;
+  color: #238014;
+  position: absolute;
+  font-weight: 800;
+  left: 75%;
+}
+
+.quote-text::before {
+  content: "“";
+  top: -50px;
+  left: 100px;
+  font-weight: 800;
+  
+}
+
+.quote-text::after {
+  content: "”";
+  bottom: -30px;
+  right: -30px;
 }
 
 .author {
+  font-family: 'Jost';
   color: #2F8A1E;
   font-size: 20px;
-  margin-bottom: 40px;
+  margin: 30px 0;
 }
 
 .cta-button {
-  background-color: #2F8A1E;
+  font-family: 'Jost';
+  background-color: #55AB25;
   color: white;
   border: none;
   border-radius: 40px;
   padding: 18px 32px;
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   width: fit-content;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  margin-left: 20%;
 }
-
 .arrows {
-  margin-top: 40px;
-  font-size: 24px;
+  font-size: 21px;
   color: #2F8A1E;
   display: flex;
-  gap: 30px;
+  margin-left: 20%;
+  gap: 20px;
+  font-weight: bolder;
 }
 
 .image-column {
@@ -518,7 +536,6 @@ p {
   height: 100%;
   object-fit: cover;
 }
-
 
 
 @media (max-width: 699px) {
