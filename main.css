@@ -44,7 +44,7 @@ a{
 .navbar-center a {
   font-size: 14px;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 400;
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
@@ -75,7 +75,7 @@ a{
 .content {
     margin-left: 80px;
     color: white;
-    font-family: Helvetica;
+    font-family: 'IBM Plex Sans';
 }
 
 .protein-section {
@@ -83,7 +83,7 @@ a{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    font-family: Helvetica;
+    font-family: 'IBM Plex Sans';
     color: white;
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ a{
     margin-left: 80px;
     margin-top: -20px; 
     color: white;
-    font-family: Helvetica;
+    font-family: 'IBM Plex Sans';
     max-width: 100%;
     display: flex;
     align-items: flex-start;
@@ -319,7 +319,7 @@ p {
 }
 
 .text h2 {
-  font-family: 'Helvetica Neue LT Std';
+  font-family: 'IBM Plex Sans';
   font-weight: 300;
   font-size: 60px; 
   line-height: 1.2; 
@@ -421,7 +421,7 @@ p {
 }
 
 .feature-box h3 {
-  font-family: 'Miller Display';
+  font-family: 'Playfair Display';
   font-size: 18px;
   font-weight: bold;
   line-height: 1.4;
@@ -446,6 +446,77 @@ p {
   text-align: center;
   margin-right: 10px;
  
+}
+
+.testimonial-section {
+  display: flex;
+  width: 98%;
+  height: 70vh;
+  width: 98%;
+  margin: 0 auto;
+}
+
+
+.text-column {
+  background-color: #D8F4B5;
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 60px;
+  color: #2F8A1E;
+  margin: 0;
+  line-height: 0;
+}
+
+.quote-text {
+  font-size: 48px;
+  color: #2F8A1E;
+  margin: 20px 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.author {
+  color: #2F8A1E;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #2F8A1E;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 18px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.arrows {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #2F8A1E;
+  display: flex;
+  gap: 30px;
+}
+
+.image-column {
+  flex: 1;
+}
+
+.image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
