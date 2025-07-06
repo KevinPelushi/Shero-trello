@@ -1016,23 +1016,22 @@ p {
   .awards {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 110px;
     flex-wrap: wrap;
     font-size: 14px;
-    color: #238014;
+    padding-right: 40px;
   }
 
   .awards div {
-    max-width: 120px;
+    max-width: 150px;
     line-height: 1.4;
   }
 
-  .awards span {
-    display: block;
-    font-weight: bold;
-    color: black;
-    margin-top: 4px;
-  }
+.logo-group {
+  display: flex;
+  padding-left: 218px;
+  max-width: 100%;
+}
 
 
   .newsletter-section {
@@ -1081,12 +1080,12 @@ p {
 
 .newsletter-form button {
   background-color: #55ab25;
-  color: rgba(255, 255, 255, 0.522);
+  color: white;
   border: none;
   padding: 5px 48px;
   border-radius: 30px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 300;
   cursor: pointer;
   transition: background 0.3s ease;
   font-family:'IBM Plex Sans';
@@ -1095,6 +1094,52 @@ p {
 .newsletter-form button:hover {
   background-color: #44941e;
 }
+
+.last-section {
+  background-color: #4a842f;
+  padding: 120px 60px;
+  font-family: 'Jost';
+  color: white;
+}
+
+.last-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+
+.last-logo {
+  width: 180px;
+  height: 60px;
+}
+
+
+.last-columns {
+  display: flex;
+  gap: 120px;
+  font-family: 'Jost';
+  font-weight: 100;
+  
+}
+
+.last-column p {
+  font-family: 'Jost';
+  line-height: 2.9;
+  min-width: 180px;
+  font-size: 16px;
+}
+
+.last-title {
+  font-weight: bold;
+  margin-bottom: 17px;
+  font-size: 15px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
 
 
 @media (max-width: 699px) {
