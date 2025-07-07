@@ -696,8 +696,8 @@ p {
 }
 
 .percentage {
-  width: 260px;
-  height: 230px;
+  width: 195px;
+  height: 195px;
   border: 1px solid #5ebd3e;
   border-radius: 50%;
   display: flex;
@@ -710,19 +710,21 @@ p {
 }
 
 .percentage h3 {
-  font-size: 47px;
+  font-size: 45px;
   font-weight: 900;
-  padding-top: 10px;
+  margin: 0;
+  padding-top: 5px;
 }
 
 .percentage p {
   color: #5ebd3e;
   font-size: 16px;
-  padding-bottom: 80px;
+  font-weight: 600;
   line-height: 1.4;
-  padding-right: 50px;
-  font-weight: 800;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
+
 
 .metabolic-description {
   font-size: 21px;
@@ -1003,6 +1005,8 @@ p {
 }
 
 .awards {
+  font-family: 'Jost';
+  font-weight: 700;
   display: flex;
   justify-content: center;
   gap: 110px;
@@ -1440,6 +1444,25 @@ p {
     position: static;
   }
 
+  .available-at {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .logos img {
+    width: 100px;
+    height: auto;
+  }
+
   .logo-group {
     justify-content: center;
     padding-left: 0;
@@ -1790,6 +1813,25 @@ p {
   .left-arrow,
   .right-arrow {
     position: static;
+  }
+
+  .available-at {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .logos img {
+    width: 120px;
+    height: auto;
   }
 
   .logo-group {
