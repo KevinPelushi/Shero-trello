@@ -515,6 +515,46 @@
     });
   </script>
 
+  <script>
+  const images = [
+    "photos/creatine.webp",
+    "photos/photo3.jpg",
+    "photos/photo2.webp",
+    "photos/photo1.webp"
+  ];
+
+  let current = 0;
+  let isPaused = false;
+  let timer;
+
+  const img = document.querySelector(".protein-image");
+  const dots = document.querySelectorAll(".slider-indicator div");
+  const pauseButton = document.querySelector(".pause-btn");
+
+  function showImage(index) {
+    img.src = images[index];
+    dots.forEach((d, i) => {
+      d.classList.toggle("active", i === index);
+    });
+  }
+
+  function changeImage() {
+    if (!isPaused) {
+      current++;
+      if (current >= images.length) current = 0;
+      showImage(current);
+    }
+  }
+
+  timer = setInterval(changeImage, 4000);
+
+  pauseButton.addEventListener("click", function () {
+    isPaused = !isPaused;
+    pauseButton.textContent = isPaused ? "▶" : "⏸";
+  });
+</script>
+
+
 </body>
 
 </html>
