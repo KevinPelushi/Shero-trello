@@ -677,15 +677,15 @@ p {
   text-align: center;
   font-family: 'IBM Plex Sans';
   background-color: white;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .metabolic-title {
   font-family: 'IBM Plex Sans';
   color: #238014;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 300;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .percentage-circle {
@@ -696,8 +696,8 @@ p {
 }
 
 .percentage {
-  width: 195px;
-  height: 195px;
+  width: 188px;
+  height: 188px;
   border: 1px solid #5ebd3e;
   border-radius: 50%;
   display: flex;
@@ -718,19 +718,19 @@ p {
 
 .percentage p {
   color: #5ebd3e;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 650;
   line-height: 1.4;
-  margin: 10px 0 0 0;
+  margin: 10px;
   padding: 0;
 }
 
 
 .metabolic-description {
-  font-size: 21px;
+  font-size: 17px;
   color: #000000b7;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   line-height: 1.2;
   font-family: 'Jost';
 }
@@ -738,7 +738,7 @@ p {
 .research-button {
   background-color: #38ad26;
   color: white;
-  padding: 14px 28px;
+  padding: 13px 27px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
