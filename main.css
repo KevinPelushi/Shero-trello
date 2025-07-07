@@ -783,8 +783,8 @@ p {
 
 .doctor-box {
   background-color: #f7f4f2;
-  width: 90%;
-  height: 450px;
+  width: 83%; 
+  height: 470px; 
   margin: 80px auto;
   border-radius: 16px;
   display: flex;
@@ -796,10 +796,11 @@ p {
 }
 
 .doctor-image img {
-  width: 100%;
+  width: 400px; 
   height: 100%;
-  max-width: 320px;
+  object-fit: cover; 
   display: block;
+  border-radius: 15px;
 }
 
 .doctor-content {
@@ -814,7 +815,7 @@ p {
 
 .doctor-text {
   font-family: 'Playfair Display';
-  font-size: 30px;
+  font-size: 30px; 
   color: #238014;
   margin-top: 20px;
   padding-right: 90px;
@@ -822,7 +823,9 @@ p {
 
 .s-mark {
   width: 30px;
-  padding-left: 205px;
+  padding-left: 160px;
+  
+
 }
 
 .f-mark {
@@ -832,18 +835,19 @@ p {
 
 .doctor-signature img {
   width: 100px;
-  padding-left: 210px;
+  padding-left: 185px;
   padding-bottom: 40px;
 }
 
 .doctor-footer {
   display: flex;
-  gap: 200px;
-  font-size: 16px;
+  gap: 130px;
+  font-size: 22px;
   color: #1d8400;
   font-family: 'Jost';
   font-weight: 400;
-  padding-left: 210px;
+  padding-left: 200px;
+  margin-bottom: 30px;
 }
 
 .doctor-name {
@@ -884,6 +888,7 @@ p {
   background-color: #2f8a1e;
   color: #fff;
 }
+
 
 .shake-section {
   font-family: 'Outfit', sans-serif;
