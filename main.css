@@ -216,7 +216,7 @@ p {
 }
 
 .tab {
-  padding: 10px 120px;
+  padding: 10px 155px;
   border-radius: 12px;
   position: relative;
   background: transparent;
@@ -542,17 +542,17 @@ p {
   color: #238014;
   font-family: 'IBM Plex Sans';
   font-weight: 300;
-  font-size: 35px;
-  line-height: 100%;
+  font-size: 40px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .carousel-outer {
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
   max-width: 100%;
+  margin-top: 30px;
 }
 
 .carousel-track {
@@ -566,12 +566,14 @@ p {
 
 .carousel-item {
   position: relative;
-  min-width: 300px;
-  max-width: 350px;
+  width: 330px;
+  height: 520px;
   background: #5ebd3e;
   border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-wrapper {
@@ -580,9 +582,10 @@ p {
 
 .image-wrapper img {
   width: 100%;
-  height: 420px;
-  transform: translateY(10px);
-  border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
 }
 
 .expand-btn {
@@ -606,20 +609,25 @@ p {
   color: white;
   text-align: left;
   padding: 17px;
-  position: relative;
-  width: 400px;
+  width: 100%;
+  height: 240px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .text-content h3 {
   font-weight: 550;
   font-size: 24px;
-  margin-top: -7px;
+  margin-top: -10px;
   font-family: Helvetica Neue LT Std;
   padding-left: 15px;
 }
 
 .text-content p {
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
   padding-left: 15px;
   padding-top: 20px;
@@ -785,8 +793,8 @@ p {
 
 .doctor-box {
   background-color: #f7f4f2;
-  width: 83%; 
-  height: 470px; 
+  width: 83%;
+  height: 470px;
   margin: 80px auto;
   border-radius: 16px;
   display: flex;
@@ -798,9 +806,9 @@ p {
 }
 
 .doctor-image img {
-  width: 400px; 
+  width: 400px;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
   border-radius: 15px;
 }
@@ -817,7 +825,7 @@ p {
 
 .doctor-text {
   font-family: 'Playfair Display';
-  font-size: 30px; 
+  font-size: 30px;
   color: #238014;
   margin-top: 20px;
   padding-right: 90px;
@@ -826,7 +834,7 @@ p {
 .s-mark {
   width: 30px;
   padding-left: 160px;
-  
+
 
 }
 
@@ -900,7 +908,7 @@ p {
 }
 
 .shake-title {
-  font-size: 42px;
+  font-size: 38px;
   font-family: 'IBM Plex Sans';
   color: #238014;
   font-weight: 300;
@@ -947,7 +955,7 @@ p {
 
 .shake-card p {
   font-family: 'Jost';
-  padding: 25px 16px 26px 24px; 
+  padding: 25px 16px 26px 24px;
   font-size: 22px;
   font-weight: 400;
   background: #55ab25;
@@ -1030,7 +1038,7 @@ p {
 .newsletter-section {
   background-color: #d6edbe;
   padding: 35px 60px;
-  font-family:'IBM Plex Sans';
+  font-family: 'IBM Plex Sans';
   color: #238014;
   flex-direction: column;
   max-width: 100%;
@@ -1041,7 +1049,7 @@ p {
   margin: 0;
   padding-left: 10%;
   color: #238014;
-  font-family:'IBM Plex Sans';
+  font-family: 'IBM Plex Sans';
 }
 
 .newsletter-title {
@@ -1075,7 +1083,7 @@ p {
   font-size: 16px;
   outline: none;
   background-color: #d6edbe;
-  font-family:'IBM Plex Sans';
+  font-family: 'IBM Plex Sans';
 }
 
 .newsletter-form button {
@@ -1158,6 +1166,7 @@ p {
     height: 125px;
     width: auto;
     margin: 0;
+    transform: translateX(-15px);
   }
 
   .navbar-center {
@@ -1174,7 +1183,9 @@ p {
   .navbar-right {
     margin-bottom: 35px;
     padding-top: 20px;
-    gap: 7px;
+    gap: 2px;
+    transform: translateX(-15px);
+
   }
 
   .mobile-menu {
@@ -1209,6 +1220,10 @@ p {
   .mobile-menu a:hover {
     background-color: #49a942;
     color: white;
+  }
+
+  .protein-section {
+    max-width: 100%;
   }
 
   .close-btn {
@@ -1267,6 +1282,7 @@ p {
 
   .welcome-pack {
     padding: 160px 15px;
+
   }
 
   .text h2 {
@@ -1286,6 +1302,11 @@ p {
     text-align: center;
   }
 
+  .tabs {
+    padding: 40px 95px;
+  }
+
+
   .image-group {
     position: static;
     display: flex;
@@ -1300,7 +1321,8 @@ p {
   .almased-can2 {
     width: 80px;
     height: 130px;
-    margin-left: 10px;
+    transform: translateX(-20px);
+
   }
 
   .testimonial-section {
@@ -1348,9 +1370,68 @@ p {
     text-align: center;
   }
 
+  .health-carousel {
+    text-align: center;
+    background: #f8f1ee;
+    padding: 6px 30px 67px 1px;
+  }
+
+
+  .carousel-track {
+    margin-left: 0;
+    padding: 0;
+    gap: 24px;
+    transform: translateX(30px);
+  }
+
+  .carousel-item {
+    width: 90%;
+    height: 520px;
+    margin: 0 auto;
+  }
+
+  .image-wrapper img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .text-content {
+    height: 220px;
+  }
+
+  .text-content h3 {
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+  }
+
+  .text-content p {
+    font-size: 12px;
+    padding-left: 10px;
+    margin-top: 1px;
+    line-height: 1.2;
+  }
+
+  .carousel-controls {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .carousel-dots {
+    max-width: 250px;
+    margin-left: 65px;
+  }
+
+
   .metabolic-title {
     font-size: 28px;
     margin-bottom: 30px;
+  }
+
+  .feature-box {
+    transform: translateX(-45px);
   }
 
   .percentage-circle {
@@ -1446,16 +1527,38 @@ p {
 
   .available-at {
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .store-button {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .awards {
+    font-family: 'Jost';
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 6px;
+    margin-left: 4px;
+  }
+
+  .winning {
+    font-family: 'Playfair Display';
+    color: #38ad26;
+    font-size: 10px;
+    font-weight: bold;
   }
 
   .logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 0 10px;
+    gap: 100px;
+    transform: translateX(-30px);
   }
 
   .logos img {
@@ -1470,8 +1573,21 @@ p {
   }
 
   .logo-group img {
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin-left: 20px;
+  }
+
+  .newsletter-form input {
+    margin-right: 10px;
+    font-size: 12px;
+    transform: translateX(-60px);
+  }
+
+  .newsletter-form button {
+    margin-right: 10px;
+    font-size: 12px;
+    transform: translateX(-60px);
   }
 
   .last-section {
@@ -1516,6 +1632,7 @@ p {
 
 
 @media (min-width: 700px) {
+
   .mobile-menu,
   .close-btn {
     display: none;
@@ -1536,7 +1653,7 @@ p {
     width: 120px;
     height: 120px;
   }
- 
+
   .logo {
     padding-top: 0;
     width: 120px;
@@ -1841,8 +1958,25 @@ p {
   }
 
   .logo-group img {
-    width: 100%;
+    width: 62%;
     height: auto;
+    margin-left: 120px;
+  }
+
+  .winning {
+    font-family: 'Playfair Display';
+    color: #38ad26;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .awards {
+    font-family: 'Jost';
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    flex-wrap: wrap;
+    font-size: 14px;
   }
 
   .last-section {
